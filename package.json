@@ -1,19 +1,26 @@
 {
   "name": "sti-frontend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "\"My first frontend application\"",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "\"test\"",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koarito/sti-frontend.git"
+    "url": "git+https://github.com/ocmino/sti-frontend.git"
   },
-  "author": "Amir Omar Honein",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/koarito/sti-frontend/issues"
+    "url": "https://github.com/ocmino/sti-frontend/issues"
   },
-  "homepage": "https://github.com/koarito/sti-frontend#readme"
+  "homepage": "https://github.com/ocmino/sti-frontend#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "healthcheck": "^0.1.3",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  }
 }
