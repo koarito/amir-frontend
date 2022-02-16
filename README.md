@@ -1,2 +1,2 @@
 # sti-frontend
-front ent part of my program
+front end part of my program
