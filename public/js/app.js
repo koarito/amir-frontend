@@ -24,16 +24,22 @@ function createTable(dataList) {
     th2.innerHTML = "Points"
     trH.appendChild(th1);
     trH.appendChild(th2);
+    table.appendChild(trH);
 
     table.appendChild(trH);
     for (let i = 0; i < dataList.lenght; i++) {
         table.appendChild(createRow(dataList[i].name, dataList[i].points))
     }
 
-    function age() {
-        console.log("Aging game");
-        setTimeout(age, 3000);
-    }
-
     setTimeout(age, 3000);
+
+    function age() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/js/data.json");
+        xhr.onload = function(){
+            var data = JSON.parse(this.response);
+            createTable(data);
+        }
+        xhr.send();
+    }
 }
