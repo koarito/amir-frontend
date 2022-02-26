@@ -1,18 +1,22 @@
-[
+{
+    "title":"Allsvenskan",
+    "headers":{"col1":"Lag","col2":"Points"},
+    "table":[
     {
-        "name": AIK,
-        "points": 9
+        "name": "AIK",
+        "points": 9,
+        "imageUrl",""
     },
     {
-        "name": DIF,
+        "name": "DIF",
         "points": 6
     },
     {
-        "name": BP,
+        "name": "BP",
         "points": 5
     },
     {
-        "name": HSK,
+        "name": "HSK",
         "points": 3
     }
-]
+]}
