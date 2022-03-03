@@ -1,6 +1,6 @@
 function age() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "localhost:8080/footballtable");
+    xhr.open("GET", "http://localhost:8080/footballtable");
     xhr.onload = function(){
         console.log()
         var data = JSON.parse(this.response);
@@ -22,10 +22,8 @@ function createTable(data) {
     let th2 = document.createElement("th");
     th2.innerHTML = "Points"
     
-    trH.appendChild(th1);
-    trH.appendChild(th2);
-    table.appendChild(trH);
-    table.appendChild(trH);
+    table.appendChild(th1);
+    table.appendChild(th2);
 
     for(dataRow of data.teams){
         table.appendChild(createRow(dataRow));
