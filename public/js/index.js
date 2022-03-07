@@ -1,6 +1,6 @@
 function age() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://localhost:8080/footballtable");
+    xhr.open("GET", "https://amir-spring-backend.herokuapp.com/footballtable");
     xhr.onload = function(){
         console.log()
         var data = JSON.parse(this.response);
