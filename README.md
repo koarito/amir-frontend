@@ -1,2 +1,2 @@
 # sti-frontend
-front end part of my program
+Simple front end to learn dynamic html
